@@ -34,6 +34,7 @@ core-foundation = "~0.7"
 winapi = { version ="~0.3", features = ["impl-default", "devguid", "winbase", "ioapiset", "ntdef", "setupapi", "handleapi", "errhandlingapi", "winerror"] }
 
 [target.'cfg(any(target_os = "dragonfly", target_os = "freebsd"))'.dependencies]
+nix = "^0.18"
 libc = "~0.2"
 
 [dev-dependencies]
